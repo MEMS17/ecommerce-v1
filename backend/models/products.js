@@ -6,6 +6,15 @@ const productSchema = new Schema({
     type: String,
     required: true,
   },
+  reference: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  category: {
+    type: String,
+    required: true,
+  },
   description: {
     type: String,
     required: true,
