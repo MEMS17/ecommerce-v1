@@ -1,0 +1,505 @@
+<link rel="stylesheet" href="style.css">
+
+
+
+  <div class="l-wrapper">
+                <div class="content-heading">
+                    <div class="content-title">
+                        <h2 class="title-n2">Notre sélection de produit</h2>
+                    </div>
+    
+                    <div class="content-actions">
+                        <div class="filter-cat">
+                            <button class="filter-btn" id="filterBtn" aria-controls="filterListCat" onclick="showDropDownMenu('filterListCat')">
+                                Filtres
+                                <svg width="12" height="10" viewBox="0 0 12 10" fill="#222222" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9.14606L0.803847 0.128295L11.1962 0.128294L6 9.14606Z" />
+                                </svg>
+                            </button>
+                            <ul class="filter-list" id="filterListCat" aria-hidden="true">
+                                <li><button class="filter-link" onclick="showCatProduct('all', 'products')">Toutes les catégories</button></li>
+                                <li><button class="filter-link" onclick="showCatProduct('vivaces', 'products')">Plantes vivaces</button></li>
+                                <li><button class="filter-link" onclick="showCatProduct('rosier', 'products')">Rosiers</button></li>
+                                <li><button class="filter-link" onclick="showCatProduct('bulbes', 'products')">Bulbes à fleurs</button></li>
+                                <li><button class="filter-link" onclick="showCatProduct('fruits', 'products')">Fruitiers</button></li>
+                                <li><button class="filter-link" onclick="showCatProduct('arbres-arbustes', 'products')">Arbres et arbustes</button></li>
+                            </ul>
+                            <noscript>
+                                <style>
+                                    .filter-cat .filter-list {
+                                        display: block;
+                                    }
+                                </style>
+                            </noscript>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-products" id="products">
+                    <article data-product="vivaces" class="card">
+                        <div>
+                            <div class="card-image">
+                                <p class="tag-coeur" aria-label="Coeur" tabindex="0" role="link">Coup de coeur</p>
+                                <img src="https://i.postimg.cc/fWj29zpz/img-product9.png" width="auto" alt="Roses trémières">
+                            </div>
+                            
+                            <div class="card-content">
+                                <p class="product-cat" aria-label="Catégorie : Plantes vivaces">
+                                    Plantes vivaces
+                                </p>
+
+                                <h3 class="product-title title-n3">
+                                    Roses trémières doubles
+                                </h3>
+
+                                <p class="product-description">
+                                    Somptueux pompons doubles !
+                                </p>
+                            </div>
+                        </div>
+
+                        <footer class="card-infos">
+                            <p class="product-price">
+                                Lot de 5 racines nues : 
+                                <strong class="new-price">9,99 €</strong>
+                            </p>
+
+                            <p class="product-rating">
+                                <span class="stars" id="noteProduct-1">
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-regular fa-star" aria-label="étoile vide"></i>
+                                    <i class="fa-regular fa-star" aria-label="étoile vide"></i>
+                                </span>
+                                <a href="#" class="reviews-link" aria-describedby="noteProduct-1">14 commentaires</a>
+                            </p>
+
+                            <div class="product-actions">
+                                <a class="btn cta-btn js-cta-shop" tabindex="0" role="button" onclick="addShop('countShop')">Ajouter au panier</a>
+                                <a class="btn" href="produit1.html#reviews">Détails</a>
+                            </div>
+                        </footer>
+                    </article>
+                    <article data-product="vivaces" class="card">
+                        <div class="card-image">
+                            <p class="tag-new" aria-label="New" tabindex="0" role="link">Nouveauté</p>
+                            <img src="https://i.postimg.cc/QxmyR8J4/img-product2.png" alt="Sedum">
+                        </div>
+                        
+                        <div class="card-content">
+                            <p class="product-cat" aria-label="Catégorie : Plantes vivaces">
+                                Plantes vivaces
+                            </p>
+
+                            <h3 class="product-title title-n3">
+                                Sedum chocolate cherry
+                            </h3>
+
+                            <p class="product-description">
+                                Un régal pour les yeux !
+                            </p>
+                        </div>
+
+                        <footer class="card-infos">
+                            <p class="product-price">
+                                La plante : 
+                                <strong class="new-price">8,50 €</strong>
+                            </p>
+
+                            <p class="product-rating">
+                                <span class="stars" id="noteProduct-2">
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                </span>
+                                <a href="#" class="reviews-link" aria-describedby="noteProduct-2">6 commentaires</a>
+                            </p>
+
+                            <div class="product-actions">
+                                <a class="btn cta-btn js-cta-shop" tabindex="0" role="button" onclick="addShop('countShop')">Ajouter au panier</a>
+                                <a class="btn" href="produit2.html#reviews">Détails</a>
+                            </div>
+                        </footer>
+                    </article>
+                    <article data-product="fruits" class="card">
+                        <div class="card-image">
+                            <p class="tag-promo" aria-label="Promo" tabindex="0" role="link">Promotion</p>
+                            <img src="https://i.postimg.cc/Z5DD5wg6/img-product6.png" alt="Framboisier">
+                        </div>
+                        
+                        <div class="card-content">
+                            <p class="product-cat" aria-label="Catégorie : Fruitiers">
+                                Fruitiers
+                            </p>
+
+                            <h3 class="product-title title-n3">
+                                Framboisier fallgold
+                            </h3>
+
+                            <p class="product-description">
+                                Gros fruits très sucrés au goût inégalé !
+                            </p>
+                        </div>
+
+                        <footer class="card-infos">
+                            <p class="product-price">
+                                Lot de 4 plants : 
+                                <strong class="new-price">23,98 €</strong>
+                                <del class="original-price">29,98 €</del> 
+                            </p>
+
+                            <p class="product-rating">
+                                <span class="stars" id="noteProduct-3">
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-regular fa-star" aria-label="étoile vide"></i>
+                                    <i class="fa-regular fa-star" aria-label="étoile vide"></i>
+                                </span>
+                                <a href="#" class="reviews-link" aria-describedby="noteProduct-3">14 commentaires</a>
+                            </p>
+
+                            <div class="product-actions">
+                                <a class="btn cta-btn js-cta-shop" tabindex="0" role="button" onclick="addShop('countShop')">Ajouter au panier</a>
+                                <a class="btn" href="produit3.html#reviews">Détails</a>
+                            </div>
+                        </footer>
+                    </article>
+                    <article data-product="vivaces" class="card">
+                        <div>
+                            <div class="card-image">
+                                <p class="tag-coeur" aria-label="Coeur" tabindex="0" role="link">Coup de coeur</p>
+                                <img src="https://i.postimg.cc/ZqBsBrt2/img-product7.png" alt="Thym">
+                            </div>
+
+                            <div class="card-content">
+                                <p class="product-cat" aria-label="Catégorie : Plantes vivaces / Couvre-sol">
+                                    Plantes vivaces / Couvre-sol
+                                </p>
+
+                                <h3 class="product-title title-n3">
+                                    Thym serpolet
+                                </h3>
+
+                                <p class="product-description">
+                                    Un effet tapissant remarquable !
+                                </p>
+                            </div>
+                        </div>
+
+                        <footer class="card-infos">
+                            <p class="product-price">
+                                Lot de 6 mottes de diamètre 30 mm : 
+                                <strong class="new-price">16,95 €</strong>
+                            </p>
+
+                            <p class="product-rating">
+                                <span class="stars" id="noteProduct-4">
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-regular fa-star" aria-label="étoile vide"></i>
+                                </span>
+                                <a href="#" class="reviews-link" aria-describedby="noteProduct-4">56 commentaires</a>
+                            </p>
+
+                            <div class="product-actions">
+                                <a class="btn cta-btn js-cta-shop" tabindex="0" role="button" onclick="addShop('countShop')">Ajouter au panier</a>
+                                <a class="btn" href="produit4.html#reviews">Détails</a>
+                            </div>
+                        </footer>
+                    </article>
+                    <article data-product="vivaces" class="card">
+                        <div>
+                            <div class="card-image">
+                                <p class="tag-promo" aria-label="Promo" tabindex="0" role="link">Promotion</p>
+                                <img src="https://i.postimg.cc/7ZLW4FBx/img-product4.png" alt="Crucianella">
+                            </div>
+
+                            <div class="card-content">
+                                <p class="product-cat" aria-label="Catégorie : Plantes vivaces">
+                                    Plantes vivaces
+                                </p>
+
+                                <h3 class="product-title title-n3">
+                                    Crucianella red ping pong
+                                </h3>
+
+                                <p class="product-description">
+                                    Une plante couvre-sol extraordinaire !
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <footer class="card-infos">
+                            <p class="product-price">
+                                Lot de 4 godets : 
+                                <strong class="new-price">9,99 €</strong>
+                                <del class="original-price">11,75 €</del> 
+                            </p>
+
+                            <p class="product-rating">
+                                <span class="stars" id="noteProduct-5">
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-regular fa-star" aria-label="étoile vide"></i>
+                                    <i class="fa-regular fa-star" aria-label="étoile vide"></i>
+                                </span>
+                                <a href="#" class="reviews-link" aria-describedby="noteProduct-5">27 commentaires</a>
+                            </p>
+
+                            <div class="product-actions">
+                                <a class="btn cta-btn js-cta-shop" tabindex="0" role="button" onclick="addShop('countShop')">Ajouter au panier</a>
+                                <a class="btn" href="produit5.html#reviews">Détails</a>
+                            </div>
+                        </footer>
+                    </article>
+                    <article data-product="bulbes" class="card">
+                        <div>
+                            <div class="card-image">
+                                <p class="tag-new" aria-label="New" tabindex="0" role="link">Nouveauté</p>
+                                <img src="https://i.postimg.cc/wTgrfyLR/img-product3.png" alt="Crocus">
+                            </div>
+    
+                            <div class="card-content">
+                                <p class="product-cat" aria-label="Catégorie : Bulbes à fleurs">
+                                    Bulbes à fleurs
+                                </p>
+
+                                <h3 class="product-title title-n3">
+                                    Crocus safran
+                                </h3>
+
+                                <p class="product-description">
+                                    Cultivez votre propre safran !
+                                </p>
+                            </div>
+                        </div>
+
+                        <footer class="card-infos">
+                            <p class="product-price">
+                                Lot de 20 bulbes cal. 7/8 : 
+                                <strong class="new-price">17,98 €</strong>
+                            </p>
+
+                            <p class="product-rating">
+                                <span class="stars" id="noteProduct-6">
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-regular fa-star" aria-label="étoile vide"></i>
+                                    <i class="fa-regular fa-star" aria-label="étoile vide"></i>
+                                    <i class="fa-regular fa-star" aria-label="étoile vide"></i>
+                                </span>
+                                <a href="#" class="reviews-link" aria-describedby="noteProduct-6">2 commentaires</a>
+                            </p>
+
+                            <div class="product-actions">
+                                <a class="btn cta-btn js-cta-shop" tabindex="0" role="button" onclick="addShop('countShop')">Ajouter au panier</a>
+                                <a class="btn" href="produit6.html#reviews">Détails</a>
+                            </div>
+                        </footer>
+                    </article>
+                    <article data-product="bulbes" class="card">
+                        <div>
+                            <div class="card-image">
+                                <p class="tag-new" aria-label="New" tabindex="0" role="link">Nouveauté</p>
+                                <img src="https://i.postimg.cc/CMjtsHBV/img-product1.png" alt="Allium">
+                            </div>
+
+                            <div class="card-content">
+                                <p class="product-cat" aria-label="Catégorie : Bulbes à fleurs">
+                                    Bulbes à fleurs
+                                </p>
+
+                                <h3 class="product-title title-n3">
+                                    Allium geant gladiator
+                                </h3>
+
+                                <p class="product-description">
+                                    Cette variété d’Allium géant est véritablement spectaculaire !
+                                </p>
+                            </div>
+                        </div>
+
+                        <footer class="card-infos">
+                            <p class="product-price">
+                                Lot de 3 bulbes cal. 14/+ : 
+                                <strong class="new-price">7,99 €</strong>
+                            </p>
+
+                            <p class="product-rating">
+                                <span class="stars" id="noteProduct-7">
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-regular fa-star" aria-label="étoile vide"></i>
+                                    <i class="fa-regular fa-star" aria-label="étoile vide"></i>
+                                </span>
+                                <a href="#" class="reviews-link" aria-describedby="noteProduct-7">37 commentaires</a>
+                            </p>
+
+                            <div class="product-actions">
+                                <a class="btn cta-btn js-cta-shop" tabindex="0" role="button" onclick="addShop('countShop')">Ajouter au panier</a>
+                                <a class="btn" href="produit7.html#reviews">Détails</a>
+                            </div>
+                        </footer>
+                    </article>
+                    <article data-product="arbres-arbustes" class="card">
+                        <div>
+                            <div class="card-image">
+                                <p class="tag-coeur" aria-label="Coeur" tabindex="0" role="link">Coup de coeur</p>
+                                <img src="https://i.postimg.cc/Wzn5L8gF/img-product8.png" alt="Perovskia">
+                            </div>
+                            
+                            <div class="card-content">
+                                <p class="product-cat" aria-label="Catégorie : Arbres et arbustes">
+                                    Arbres et arbustes
+                                </p>
+
+                                <h3 class="product-title title-n3">
+                                    Perovskia atriplicifolia "Blue Steel"
+                                </h3>
+
+                                <p class="product-description">
+                                    Une haie fleurie tout l'été !
+                                </p>
+                            </div>
+                        </div>
+
+                        <footer class="card-infos">
+                            <p class="product-price">
+                                Lot de 2 godets : 
+                                <strong class="new-price">9,99 €</strong>
+                            </p>
+
+                            <p class="product-rating">
+                                <span class="stars" id="noteProduct-8">
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                </span>
+                                <a href="#" class="reviews-link" aria-describedby="noteProduct-8">48 commentaires</a>
+                            </p>
+
+                            <div class="product-actions">
+                                <a class="btn cta-btn js-cta-shop" tabindex="0" role="button" onclick="addShop('countShop')">Ajouter au panier</a>
+                                <a class="btn" href="produit8.html#reviews">Détails</a>
+                            </div>
+                        </footer>
+                    </article>
+                    <article data-product="arbres-arbustes" class="card">
+                        <div>
+                            <div class="card-image">
+                                <p class="tag-promo" aria-label="Promo" tabindex="0" role="link">Promotion</p>
+                                <img src="https://i.postimg.cc/Dz9jq87Z/img-product5.png" alt="Lavande">
+                            </div>
+
+                            <div class="card-content">
+                                <p class="product-cat" aria-label="Catégorie : Arbres et arbustes / Haies">
+                                    Arbres et arbustes / Haies
+                                </p>
+
+                                <h3 class="product-title title-n3">
+                                    Lavande munstead
+                                </h3>
+
+                                <p class="product-description">
+                                    Une haie fleurie tout l'été !
+                                </p>
+                            </div>
+                        </div>
+
+                        <footer class="card-infos">
+                            <p class="product-price">
+                                Lot de 8 touffette : 
+                                <strong class="new-price">27,75 €</strong>
+                                <del class="original-price">37,00 €</del> 
+                            </p>
+
+                            <p class="product-rating">
+                                <span class="stars" id="noteProduct-9">
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                    <i class="fa-solid fa-star" aria-label="étoile"></i>
+                                </span>
+                                <a href="#" class="reviews-link" aria-describedby="noteProduct-9">6 commentaires</a>
+                            </p>
+
+                            <div class="product-actions">
+                                <a class="btn cta-btn js-cta-shop" tabindex="0" role="button" onclick="addShop('countShop')">Ajouter au panier</a>
+                                <a class="btn" href="produit9.html#reviews">Détails</a>
+                            </div>
+                        </footer>
+                    </article>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- PIED DE PAGE -->
+    <footer class="l-footer" id="footer">
+        <div class="footer-content">
+            <div class="l-wrapper">
+                <div class="footer-logo">
+                    <svg width="291" height="90" viewBox="0 0 291 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_42)">
+                            <path d="M1.29727 0.635622C-0.563891 2.26336 -2.1904 30.2048 9.73923 40.7847C21.6689 51.3646 36.0404 51.0932 44.7159 40.7847C53.3913 30.4762 52.0365 12.3004 39.293 6.33232C26.5495 0.3642 3.15843 -0.992118 1.29727 0.635622Z" fill="#4CAF50" />
+                            <path d="M113.195 15.578C112.106 13.3562 85.55 4.54683 72.2457 13.3371C58.9413 22.1274 55.4808 36.0874 63.1867 47.1421C70.8926 58.1969 88.7918 61.5949 97.8543 50.8248C106.917 40.0547 114.285 17.7965 113.195 15.578Z" fill="#4CAF50" />
+                            <path d="M49.7336 90.0012H49.6738C48.0938 89.9736 46.8015 88.8619 46.7023 87.4449C46.3283 82.1115 46.1956 77.0778 46.0668 72.2099C45.4436 48.6132 45.0317 33.0232 20.0283 23.0176C18.4963 22.4047 17.8076 20.7919 18.49 19.4155C19.1723 18.0391 20.9673 17.4202 22.4993 18.0332C47.0586 27.8607 50.8329 43.182 51.8094 62.4647C63.1634 27.7197 85.9745 27.0634 87.1235 27.0543C88.8015 27.0405 90.1717 28.2519 90.1867 29.7587C90.2012 31.258 88.8669 32.4855 87.2014 32.5103C86.7742 32.5245 58.8453 33.9651 52.7543 87.5509C52.5949 88.9431 51.2873 90.0012 49.7336 90.0012Z" fill="#326900" />
+                        </g>
+                        <path d="M136.583 15.7127C136.34 15.7709 136.151 15.8776 136.015 16.0327C135.889 16.1782 135.826 16.377 135.826 16.6291V30.2873C135.826 31.9745 135.749 33.4145 135.594 34.6073C135.448 35.7903 135.133 36.8133 134.648 37.6764C134.163 38.5491 133.46 39.32 132.539 39.9891C131.618 40.6582 130.401 41.3224 128.888 41.9818L128.146 40.5273C129.058 39.8776 129.8 39.2521 130.372 38.6509C130.954 38.0594 131.409 37.4097 131.739 36.7018C132.069 35.9939 132.292 35.1745 132.408 34.2436C132.534 33.3127 132.597 32.1927 132.597 30.8836V16.6291C132.597 16.3867 132.529 16.1879 132.394 16.0327C132.268 15.8679 132.083 15.7612 131.841 15.7127L129.514 15.2618V13.7491H138.619V15.2618L136.583 15.7127Z" fill="#222222" />
+                        <path d="M146.308 34.7527C147.006 34.7527 147.714 34.6218 148.431 34.36C149.149 34.0885 149.76 33.7442 150.264 33.3273V29.4436L147.486 29.6909C146.312 29.7879 145.411 30.0545 144.78 30.4909C144.16 30.9273 143.849 31.5915 143.849 32.4836C143.849 33.2012 144.048 33.7588 144.446 34.1564C144.853 34.5539 145.474 34.7527 146.308 34.7527ZM153.028 36.7164C152.329 36.7164 151.757 36.5418 151.311 36.1927C150.865 35.8339 150.555 35.3152 150.38 34.6364C149.769 35.2958 149.008 35.8242 148.097 36.2218C147.185 36.6097 146.211 36.8036 145.173 36.8036C144.514 36.8036 143.898 36.7164 143.326 36.5418C142.754 36.3673 142.259 36.1152 141.842 35.7855C141.435 35.4461 141.11 35.0291 140.868 34.5345C140.635 34.0303 140.518 33.4582 140.518 32.8182C140.518 31.9745 140.712 31.2667 141.1 30.6945C141.488 30.1224 141.988 29.6618 142.598 29.3127C143.219 28.9636 143.908 28.7018 144.664 28.5273C145.43 28.3527 146.181 28.2364 146.918 28.1782L150.264 27.9018V25.9382C150.264 24.4448 149.963 23.3927 149.362 22.7818C148.771 22.1709 147.864 21.8655 146.642 21.8655C145.721 21.8655 144.848 22.0206 144.024 22.3309C143.209 22.6315 142.453 23.1067 141.755 23.7564L141.013 23.0145C141.197 22.4618 141.498 21.9721 141.915 21.5455C142.332 21.1091 142.821 20.7455 143.384 20.4545C143.956 20.1636 144.596 19.9455 145.304 19.8C146.012 19.6448 146.749 19.5673 147.515 19.5673C149.444 19.5673 150.894 20.057 151.864 21.0364C152.834 22.0061 153.318 23.4945 153.318 25.5018V33.7345C153.318 34.0448 153.386 34.2727 153.522 34.4182C153.668 34.5539 153.876 34.6364 154.148 34.6655L155.82 34.8109V36.1927C155.578 36.28 155.166 36.3867 154.584 36.5127C154.012 36.6485 153.493 36.7164 153.028 36.7164Z" fill="#222222" />
+                        <path d="M167.527 35.0291V36.4691H158.072V34.9855L159.861 34.7091C160.113 34.6703 160.307 34.5782 160.443 34.4327C160.588 34.2776 160.661 34.0739 160.661 33.8218V23.0436C160.661 22.7527 160.598 22.5248 160.472 22.36C160.356 22.1952 160.157 22.0933 159.876 22.0545L157.868 21.7636V20.3382C158.634 20.1055 159.464 19.9212 160.356 19.7855C161.248 19.6497 162.072 19.577 162.828 19.5673L163.323 20.0327L163.657 22.6945C163.958 22.2776 164.317 21.8752 164.734 21.4873C165.151 21.0994 165.597 20.76 166.072 20.4691C166.547 20.1685 167.047 19.9309 167.57 19.7564C168.104 19.5721 168.632 19.48 169.156 19.48C169.456 19.48 169.801 19.5139 170.188 19.5818C170.576 19.6497 170.891 19.7467 171.134 19.8727C171.202 20.6873 171.202 21.6085 171.134 22.6364C171.076 23.6642 170.959 24.6 170.785 25.4436H169.257L168.836 23.1891C168.768 22.8691 168.656 22.6461 168.501 22.52C168.356 22.3939 168.137 22.3309 167.847 22.3309C167.168 22.3212 166.47 22.457 165.752 22.7382C165.044 23.0194 164.385 23.4655 163.774 24.0764V33.8218C163.774 34.0836 163.842 34.2921 163.977 34.4473C164.123 34.5927 164.327 34.68 164.588 34.7091L167.527 35.0291Z" fill="#222222" />
+                        <path d="M181.166 34.68C181.893 34.68 182.576 34.5588 183.216 34.3164C183.856 34.0739 184.424 33.7491 184.918 33.3418V21.9091C184.569 21.7055 184.113 21.5309 183.551 21.3855C182.998 21.24 182.416 21.1673 181.806 21.1673C181.127 21.1673 180.482 21.2836 179.871 21.5164C179.27 21.7394 178.746 22.1176 178.3 22.6509C177.854 23.1842 177.5 23.9018 177.238 24.8036C176.976 25.7055 176.846 26.8255 176.846 28.1636C176.846 29.4242 176.962 30.4764 177.195 31.32C177.427 32.1539 177.738 32.823 178.126 33.3273C178.523 33.8218 178.984 34.1709 179.507 34.3745C180.031 34.5782 180.584 34.68 181.166 34.68ZM187.74 36.7164C186.955 36.7164 186.349 36.5127 185.922 36.1055C185.505 35.6982 185.219 35.1891 185.064 34.5782C184.501 35.1988 183.798 35.7273 182.955 36.1636C182.121 36.5903 181.146 36.8036 180.031 36.8036C179.149 36.8036 178.305 36.6485 177.5 36.3382C176.705 36.0279 176.012 35.5479 175.42 34.8982C174.829 34.2388 174.358 33.3903 174.009 32.3527C173.66 31.3152 173.486 30.0788 173.486 28.6436C173.486 27.1018 173.689 25.7539 174.096 24.6C174.513 23.4461 175.09 22.4909 175.827 21.7345C176.574 20.9782 177.471 20.4158 178.518 20.0473C179.566 19.6691 180.719 19.48 181.98 19.48C182.523 19.48 183.047 19.5139 183.551 19.5818C184.055 19.6497 184.511 19.7321 184.918 19.8291V13.6764C184.918 13.4145 184.846 13.2109 184.7 13.0655C184.564 12.92 184.375 12.8279 184.133 12.7891L181.922 12.4836V11.1455C182.339 11.0194 182.79 10.9079 183.275 10.8109C183.759 10.7139 184.249 10.6315 184.744 10.5636C185.248 10.4958 185.743 10.4424 186.227 10.4036C186.712 10.3552 187.163 10.3261 187.58 10.3164L188.031 10.7818V33.72C188.031 34.0594 188.109 34.297 188.264 34.4327C188.429 34.5588 188.632 34.6364 188.875 34.6655L190.547 34.8109V36.1927C190.218 36.2994 189.781 36.4109 189.238 36.5273C188.695 36.6533 188.196 36.7164 187.74 36.7164Z" fill="#222222" />
+                        <path d="M198.696 20.0327V33.7927C198.696 34.0545 198.764 34.263 198.899 34.4182C199.035 34.5733 199.229 34.6703 199.481 34.7091L201.27 34.9855V36.4691H192.994V34.9855L194.783 34.7091C195.035 34.6703 195.229 34.5733 195.365 34.4182C195.51 34.263 195.583 34.0594 195.583 33.8073V22.9709C195.583 22.7091 195.515 22.5006 195.379 22.3455C195.253 22.1903 195.064 22.0933 194.812 22.0545L192.79 21.7636V20.3382C193.624 20.0861 194.531 19.9018 195.51 19.7855C196.49 19.6594 197.396 19.5867 198.23 19.5673L198.696 20.0327ZM198.928 15.0582C198.928 15.6788 198.73 16.1879 198.332 16.5855C197.935 16.9733 197.416 17.1673 196.776 17.1673C196.136 17.1673 195.617 16.9733 195.219 16.5855C194.822 16.1879 194.623 15.6788 194.623 15.0582C194.623 14.4473 194.822 13.9479 195.219 13.56C195.617 13.1721 196.136 12.9782 196.776 12.9782C197.416 12.9782 197.935 13.1721 198.332 13.56C198.73 13.9479 198.928 14.4473 198.928 15.0582Z" fill="#222222" />
+                        <path d="M211.77 34.9855V36.4691H203.697V34.9855L205.486 34.7091C205.738 34.6703 205.932 34.5733 206.068 34.4182C206.213 34.263 206.286 34.0594 206.286 33.8073V22.9709C206.286 22.7091 206.218 22.5006 206.082 22.3455C205.956 22.1903 205.767 22.0933 205.515 22.0545L203.493 21.7636V20.3382C204.279 20.0958 205.118 19.9115 206.01 19.7855C206.912 19.6497 207.755 19.577 208.541 19.5673L209.05 20.0764L209.268 21.8655C210.073 21.0121 210.979 20.4109 211.988 20.0618C212.996 19.7127 214.019 19.5382 215.057 19.5382C216.987 19.5382 218.301 20.1006 218.999 21.2255C219.697 22.3503 220.046 23.9164 220.046 25.9236V33.8218C220.046 34.0739 220.114 34.2776 220.25 34.4327C220.395 34.5782 220.589 34.6703 220.832 34.7091L222.621 34.9855V36.4691H214.562V34.9855L216.148 34.7091C216.371 34.6703 216.555 34.583 216.701 34.4473C216.856 34.3018 216.933 34.0933 216.933 33.8218V26.4909C216.933 24.8909 216.715 23.6982 216.279 22.9127C215.842 22.1176 214.994 21.72 213.733 21.72C212.967 21.72 212.211 21.8364 211.464 22.0691C210.718 22.3018 210.029 22.6558 209.399 23.1309V33.8073C209.399 34.0594 209.467 34.263 209.602 34.4182C209.738 34.5636 209.927 34.6606 210.17 34.7091L211.77 34.9855Z" fill="#222222" />
+                        <path d="M140.074 72.6436C139.579 72.6436 139.128 72.6339 138.721 72.6145C138.314 72.5952 137.916 72.5758 137.528 72.5564C137.15 72.537 136.757 72.5176 136.35 72.4982C135.943 72.4788 135.492 72.4691 134.997 72.4691H129.645V70.5782L132.015 70.1418C132.2 70.1127 132.345 70.0303 132.452 69.8945C132.568 69.7491 132.626 69.5842 132.626 69.4V52.92C132.626 52.7358 132.573 52.5806 132.466 52.4545C132.36 52.3188 132.214 52.2315 132.03 52.1927L129.645 51.7127V49.7491H134.983C135.904 49.7491 136.762 49.72 137.557 49.6618C138.352 49.5939 139.23 49.56 140.19 49.56C141.703 49.56 142.968 49.6764 143.986 49.9091C145.014 50.1321 145.829 50.4667 146.43 50.9127C147.041 51.3588 147.472 51.9164 147.725 52.5855C147.977 53.2545 148.103 54.0255 148.103 54.8982C148.103 56.3527 147.739 57.5455 147.012 58.4764C146.285 59.4073 145.295 60.0376 144.045 60.3673C144.859 60.4061 145.611 60.5564 146.299 60.8182C146.997 61.0703 147.589 61.4242 148.074 61.88C148.568 62.3261 148.951 62.8788 149.223 63.5382C149.504 64.1879 149.645 64.9297 149.645 65.7636C149.645 66.7333 149.489 67.64 149.179 68.4836C148.869 69.3273 148.345 70.0594 147.608 70.68C146.881 71.2909 145.897 71.7709 144.655 72.12C143.424 72.4691 141.897 72.6436 140.074 72.6436ZM139.928 59.6982C141.111 59.6982 141.984 59.3297 142.546 58.5927C143.118 57.8461 143.405 56.7649 143.405 55.3491C143.405 53.9818 143.099 52.9879 142.488 52.3673C141.887 51.737 140.912 51.4218 139.565 51.4218C139.419 51.4218 139.24 51.4267 139.026 51.4364C138.823 51.4461 138.614 51.4606 138.401 51.48C138.188 51.4994 137.984 51.5188 137.79 51.5382C137.606 51.5576 137.465 51.5721 137.368 51.5818V59.6545C137.863 59.6739 138.338 59.6885 138.794 59.6982C139.259 59.6982 139.637 59.6982 139.928 59.6982ZM139.855 70.6945C141.485 70.6945 142.653 70.2873 143.361 69.4727C144.069 68.6582 144.423 67.4945 144.423 65.9818C144.423 64.4594 144.074 63.3879 143.375 62.7673C142.687 62.1467 141.649 61.8364 140.263 61.8364C139.894 61.8364 139.448 61.8412 138.925 61.8509C138.411 61.8606 137.892 61.8752 137.368 61.8945V70.4909C137.669 70.5394 138.052 70.5879 138.517 70.6364C138.992 70.6752 139.438 70.6945 139.855 70.6945Z" fill="#222222" />
+                        <path d="M152.282 64.3236C152.282 62.7333 152.495 61.3758 152.922 60.2509C153.358 59.1164 153.95 58.2 154.696 57.5018C155.453 56.8036 156.345 56.2945 157.373 55.9745C158.4 55.6449 159.501 55.48 160.674 55.48C163.225 55.48 165.183 56.2073 166.551 57.6618C167.918 59.1067 168.602 61.2255 168.602 64.0182C168.602 65.6085 168.383 66.9661 167.947 68.0909C167.52 69.2158 166.929 70.1273 166.173 70.8255C165.426 71.5236 164.539 72.0327 163.511 72.3527C162.483 72.6727 161.377 72.8327 160.194 72.8327C157.644 72.8327 155.685 72.1103 154.318 70.6655C152.96 69.2206 152.282 67.1067 152.282 64.3236ZM163.671 64.3673C163.671 62.0109 163.433 60.28 162.958 59.1745C162.493 58.0594 161.625 57.5018 160.354 57.5018C159.297 57.5018 158.507 57.9867 157.983 58.9564C157.46 59.9261 157.198 61.5939 157.198 63.96C157.198 66.3067 157.431 68.0376 157.896 69.1527C158.371 70.2679 159.249 70.8255 160.529 70.8255C161.586 70.8255 162.371 70.3406 162.885 69.3709C163.409 68.3915 163.671 66.7236 163.671 64.3673Z" fill="#222222" />
+                        <path d="M173.026 67.8436V58.4618L170.684 58.0836V56.3527L172.517 56.0182C172.779 55.9794 172.978 55.897 173.113 55.7709C173.249 55.6352 173.356 55.4461 173.433 55.2036L174.844 50.7091H177.39L177.535 55.9164H182.379V58.3745H177.579V66.7236C177.579 67.8776 177.758 68.6679 178.117 69.0945C178.485 69.5115 179.009 69.72 179.688 69.72C180.144 69.72 180.604 69.6376 181.07 69.4727C181.545 69.2982 181.971 69.0315 182.35 68.6727L183.339 69.72C182.864 70.7285 182.127 71.4849 181.128 71.9891C180.129 72.4933 178.999 72.7455 177.739 72.7455C176.352 72.7455 175.218 72.4061 174.335 71.7273C173.462 71.0388 173.026 69.7442 173.026 67.8436Z" fill="#222222" />
+                        <path d="M191.313 70.1855C191.837 70.1855 192.346 70.103 192.841 69.9382C193.345 69.7636 193.791 69.5309 194.179 69.24V65.5455L192.186 65.6909C191.178 65.7588 190.455 66.0206 190.019 66.4764C189.582 66.9321 189.364 67.5139 189.364 68.2218C189.364 68.8618 189.515 69.3515 189.815 69.6909C190.125 70.0206 190.625 70.1855 191.313 70.1855ZM197.655 72.7309C196.87 72.7309 196.201 72.5806 195.648 72.28C195.105 71.9697 194.698 71.4606 194.426 70.7527C193.854 71.3927 193.136 71.897 192.273 72.2655C191.42 72.6242 190.475 72.8036 189.437 72.8036C188.012 72.8036 186.858 72.44 185.975 71.7127C185.102 70.9758 184.666 69.9867 184.666 68.7455C184.666 67.9503 184.845 67.2618 185.204 66.68C185.573 66.0885 186.058 65.6036 186.659 65.2255C187.26 64.8376 187.944 64.5418 188.71 64.3382C189.485 64.1249 190.281 63.9939 191.095 63.9455L194.179 63.7418V62.0109C194.179 60.7115 193.898 59.8097 193.335 59.3055C192.782 58.8012 191.963 58.5491 190.877 58.5491C189.975 58.5491 189.136 58.6994 188.361 59C187.585 59.2909 186.862 59.7321 186.193 60.3236L185.161 59.3927C185.607 58.1806 186.436 57.2352 187.648 56.5564C188.87 55.8679 190.387 55.5236 192.201 55.5236C194.412 55.5236 196.031 56.0521 197.059 57.1091C198.087 58.1661 198.601 59.7321 198.601 61.8073V69.3418C198.601 69.6521 198.664 69.8752 198.79 70.0109C198.925 70.137 199.119 70.2145 199.372 70.2436L200.884 70.4182V72.1782C200.555 72.2752 200.07 72.3915 199.43 72.5273C198.79 72.663 198.198 72.7309 197.655 72.7309Z" fill="#222222" />
+                        <path d="M211.566 70.5927V72.4691H202.78V70.5927L204.438 70.3018C204.662 70.263 204.836 70.1709 204.962 70.0255C205.088 69.88 205.151 69.6909 205.151 69.4582V59.4509C205.151 59.2182 205.093 59.0291 204.977 58.8836C204.86 58.7285 204.691 58.6315 204.468 58.5927L202.606 58.2436V56.3527C203.546 56.0909 204.54 55.8921 205.588 55.7564C206.635 55.6109 207.619 55.5333 208.54 55.5236L209.195 56.1345L209.471 57.7782C210.198 57.0024 211.032 56.44 211.973 56.0909C212.923 55.7321 213.932 55.5527 214.998 55.5527C216.938 55.5527 218.262 56.1055 218.969 57.2109C219.687 58.3067 220.046 59.8533 220.046 61.8509V69.4582C220.046 69.7006 220.109 69.8945 220.235 70.04C220.361 70.1758 220.535 70.263 220.758 70.3018L222.417 70.5927V72.4691H213.631V70.5927L214.809 70.3164C215.032 70.2485 215.202 70.1515 215.318 70.0255C215.445 69.8897 215.508 69.7006 215.508 69.4582V62.4327C215.508 60.9879 215.299 59.9455 214.882 59.3055C214.475 58.6655 213.777 58.3455 212.788 58.3455C212.274 58.3455 211.745 58.423 211.202 58.5782C210.669 58.7333 210.165 58.9612 209.689 59.2618V69.4582C209.689 69.6909 209.748 69.8752 209.864 70.0109C209.99 70.1467 210.16 70.2485 210.373 70.3164L211.566 70.5927Z" fill="#222222" />
+                        <path d="M231.252 56.12V69.4582C231.252 69.6909 231.31 69.88 231.426 70.0255C231.553 70.1709 231.732 70.263 231.965 70.3018L233.608 70.5927V72.4691H224.343V70.5927L225.986 70.3018C226.219 70.263 226.399 70.1709 226.525 70.0255C226.651 69.88 226.714 69.6909 226.714 69.4582V59.4509C226.714 59.2182 226.656 59.0291 226.539 58.8836C226.423 58.7285 226.253 58.6315 226.03 58.5927L224.168 58.2436V56.3527C225.138 56.0812 226.214 55.8776 227.397 55.7418C228.58 55.6061 229.657 55.5382 230.626 55.5382L231.252 56.12ZM231.31 50.9855C231.31 51.7224 231.073 52.3188 230.597 52.7745C230.122 53.2206 229.492 53.4436 228.706 53.4436C227.911 53.4436 227.271 53.2206 226.786 52.7745C226.311 52.3188 226.074 51.7224 226.074 50.9855C226.074 50.2582 226.311 49.6715 226.786 49.2255C227.271 48.7794 227.911 48.5564 228.706 48.5564C229.492 48.5564 230.122 48.7794 230.597 49.2255C231.073 49.6715 231.31 50.2582 231.31 50.9855Z" fill="#222222" />
+                        <path d="M253.315 79.6836H243.511V77.8218L245.984 77.5164C246.226 77.4873 246.405 77.4 246.522 77.2545C246.648 77.1188 246.711 76.9297 246.711 76.6873V71.0145C246.197 71.5479 245.576 71.9794 244.849 72.3091C244.122 72.6388 243.288 72.8036 242.347 72.8036C241.407 72.8036 240.529 72.6485 239.715 72.3382C238.91 72.0182 238.216 71.5285 237.635 70.8691C237.053 70.2097 236.592 69.3661 236.253 68.3382C235.923 67.3006 235.758 66.0691 235.758 64.6436C235.758 61.7733 236.51 59.5285 238.013 57.9091C239.525 56.2897 241.586 55.48 244.195 55.48C244.951 55.48 245.707 55.5721 246.464 55.7564C247.23 55.9406 247.918 56.1782 248.529 56.4691L250.522 55.6109L251.249 56.2073V76.6873C251.249 76.9297 251.312 77.1188 251.438 77.2545C251.564 77.3903 251.744 77.4824 251.976 77.5309L253.315 77.8218V79.6836ZM243.933 70.2C244.437 70.2 244.927 70.1273 245.402 69.9818C245.887 69.8267 246.323 69.6133 246.711 69.3418V58.2291C246.43 57.9867 246.1 57.8121 245.722 57.7055C245.344 57.5891 244.922 57.5309 244.456 57.5309C243.302 57.5309 242.367 58.0206 241.649 59C240.932 59.9697 240.568 61.6182 240.558 63.9455C240.558 66.2727 240.864 67.897 241.475 68.8182C242.095 69.7394 242.915 70.2 243.933 70.2Z" fill="#222222" />
+                        <path d="M270.464 72.7309C269.65 72.7309 268.976 72.5612 268.442 72.2218C267.919 71.8727 267.521 71.3782 267.25 70.7382C266.629 71.3879 265.907 71.897 265.082 72.2655C264.268 72.6242 263.269 72.8036 262.086 72.8036C260.331 72.8036 259.022 72.3236 258.159 71.3636C257.305 70.4036 256.879 68.9394 256.879 66.9709V59.4073C256.879 59.1842 256.825 59 256.719 58.8545C256.612 58.6994 256.442 58.5976 256.21 58.5491L254.566 58.1855V56.2655C255.497 56.0327 256.534 55.8533 257.679 55.7273C258.823 55.6012 259.865 55.5382 260.806 55.5382L261.417 56.12V66.3309C261.417 67.7758 261.616 68.7842 262.013 69.3564C262.42 69.9188 263.094 70.2 264.035 70.2C264.53 70.2 265.024 70.1224 265.519 69.9673C266.013 69.8024 266.484 69.5697 266.93 69.2691V59.4073C266.93 59.1745 266.871 58.9806 266.755 58.8255C266.639 58.6703 266.469 58.5685 266.246 58.52L264.413 58.1418V56.2364C264.888 56.12 265.402 56.0182 265.955 55.9309C266.508 55.8436 267.065 55.7709 267.628 55.7127C268.19 55.6545 268.748 55.6109 269.3 55.5818C269.853 55.5527 270.367 55.5382 270.842 55.5382L271.468 56.12V69.3418C271.468 69.6618 271.536 69.8848 271.671 70.0109C271.817 70.137 272.011 70.2145 272.253 70.2436L273.751 70.4182V72.1782C273.412 72.2849 272.922 72.4012 272.282 72.5273C271.652 72.663 271.046 72.7309 270.464 72.7309Z" fill="#222222" />
+                        <path d="M283.609 57.4727C282.824 57.4727 282.174 57.783 281.66 58.4036C281.156 59.0242 280.831 60.0812 280.685 61.5745H286.198C286.208 61.4776 286.213 61.3758 286.213 61.2691C286.213 61.1624 286.213 61.0412 286.213 60.9055C286.213 59.9067 285.994 59.0873 285.558 58.4473C285.131 57.7976 284.482 57.4727 283.609 57.4727ZM290.344 68.8473C289.956 70.1079 289.161 71.0873 287.958 71.7855C286.756 72.4836 285.296 72.8327 283.58 72.8327C282.271 72.8327 281.131 72.6291 280.162 72.2218C279.202 71.8145 278.407 71.2424 277.776 70.5055C277.146 69.7685 276.676 68.8764 276.365 67.8291C276.065 66.7818 275.914 65.6182 275.914 64.3382C275.914 61.497 276.627 59.3152 278.053 57.7927C279.488 56.2606 281.466 55.4945 283.987 55.4945C286.13 55.4945 287.74 56.0133 288.816 57.0509C289.902 58.0885 290.445 59.4558 290.445 61.1527C290.445 61.4824 290.426 61.8558 290.387 62.2727C290.348 62.6897 290.295 63.063 290.227 63.3927H280.598V63.4945C280.598 65.8024 280.947 67.4606 281.645 68.4691C282.344 69.4679 283.439 69.9673 284.933 69.9673C285.776 69.9673 286.581 69.8073 287.347 69.4873C288.123 69.1673 288.753 68.7018 289.238 68.0909L290.344 68.8473Z" fill="#222222" />
+                        <defs>
+                            <clipPath id="clip0_1_42">
+                                <rect width="114.146" height="90" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+
+                <div class="footer-nav">
+                    <div class="footer-menu">
+                        <p class="footer-title title-n3"><strong>Nos services</strong></p>
+
+                        <div class="footer-list">
+                            <a href="delivery.html" class="list-link">Livraison à domicile</a>
+                            <a href="guarantee.html" class="list-link">Garantie 100% reprise</a>
+                            <a href="faq.html" class="list-link">Questions - réponses</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-menu">
+                        <p class="footer-title title-n3"><strong>Informations</strong></p>
+
+                        <div class="footer-list">
+                            <a href="quality.html" class="list-link">La qualité de nos plantes</a>
+                            <a href="location.html" class="list-link">Notre jardinerie</a>
+                            <a href="contact.html" class="list-link">Nous contacter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
