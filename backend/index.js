@@ -14,6 +14,11 @@ app.use(fileUpload());// Middleware pour le téléchargement de fichiers
 const appRouter = require("./routes/routes");  
 app.use("/api/v1", appRouter);
 
+// Middleware 404 pour les routes non trouvées
+app.use(require("./middlewares/notFound"));
+// Middleware pour gérer les erreurs
+app.use(require("./middlewares/errorHandler"));
+
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error(err));
