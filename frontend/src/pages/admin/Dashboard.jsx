@@ -22,7 +22,7 @@ const Dashboard = () => {
   const handleLogout = () => {
     // Ici tu peux nettoyer les données de session (localStorage, cookies, etc.)
     // Exemple : localStorage.removeItem("token");
-    navigate("/admin/signup"); // redirection vers la page signup
+    navigate("/admin/Login"); // redirection vers la page signup
   };
 
   const renderContent = () => {

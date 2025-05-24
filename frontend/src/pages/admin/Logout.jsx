@@ -1,17 +1,15 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
+
 const Logout = () => {
   const navigate = useNavigate();
+  const { logout } = useAuth();
 
   useEffect(() => {
-    // Suppression des infos d'auth (adapter selon ton stockage)
-    localStorage.removeItem("token");
-    localStorage.removeItem("user");
-
-    // Redirection vers login après déconnexion
-    navigate("/admin/Signup");
-  }, [navigate]);
+    logout();  // supprime token + met isAuthenticated à false
+    navigate("/admin/Login"); // redirection après déconnexion
+  }, [logout, navigate]);
 
   return (
     <div className="flex justify-center items-center h-screen">
