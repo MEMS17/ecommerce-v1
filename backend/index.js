@@ -9,6 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(fileUpload());// Middleware pour le téléchargement de fichiers
+app.use("/public", express.static("public")); // Middleware pour servir les fichiers statiques
 
 // Routes
 const appRouter = require("./routes/routes");  
