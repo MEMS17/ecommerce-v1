@@ -41,6 +41,19 @@ exports.show = async (req, res) => {
     }
 };
 
+// Get orders by user ID
+exports.view = async (req, res) => {
+    try {
+        const orders = await orderService.getOrdersByUserId(req.params.userId);
+        if (!orders || orders.length === 0) {
+            return res.status(404).json({ message: "Aucune commande trouvée pour cet utilisateur" });
+        }
+        res.status(200).json(orders);
+    } catch (error) {
+        res.status(500).json({ message: "Erreur serveur", error: error.message || error });
+    }
+};
+
 exports.update = async (req, res) => {
     try {
         const updateData = req.body;

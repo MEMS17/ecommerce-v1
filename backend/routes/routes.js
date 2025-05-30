@@ -6,10 +6,9 @@ const orderRoutes = require("./orders.routes");
 const authRoutes = require("./auth.routes");
 const { authenticate } = require("../middlewares/auth/verifyToken");
 
-
 const router = express.Router();
 // Define the routes
-router.use("/users", userRoutes);
+router.use("/users", authenticate, userRoutes);
 router.use("/auth", authRoutes);
 router.use("/products", productRoutes);
 router.use("/orders", authenticate, orderRoutes);
