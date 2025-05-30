@@ -23,6 +23,26 @@ npm i
 
 > Créer un fichier `.env` , initialiser les constantes suivantes `PORT=?`, `MONGO_URI=?`, `JWT_TOKEN=?`, `JWT_EXPIRATION=?` et remplace les `?` par des valeurs
 
+---
+
+## Création automatique d’un administrateur (seed)
+
+Pour garantir qu’un compte administrateur existe dès le départ, un script de seed est fourni.  
+Ce script vérifie si un utilisateur avec l’email `admin@admin.com` existe déjà.  
+S’il n’existe pas, il crée un utilisateur admin avec le mot de passe `admin123`.
+
+**Utilisation :**
+
+```bash
+cd backend
+npm run seed
+```
+
+- Si un admin existe déjà, le script ne fait rien.
+- Sinon, il crée un admin par défaut (`admin@admin.com` / `admin123`).
+
+> ⚠️ Pense à changer le mot de passe admin après la première utilisation pour la sécurité !
+
 ## Organisation des Routes Backend
 
 Toutes les routes de l'API sont préfixées par `/api/v1`.
